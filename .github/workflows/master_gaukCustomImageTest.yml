@@ -30,7 +30,7 @@ jobs:
       uses: docker/build-push-action@v2
       with:
         push: true
-        tags: gaukacr.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_83972e15a51a42aea9193dfaf5c9e7a2 }}/gauktestmage:${{ github.sha }}
+        tags: gaukacr.azurecr.io/gauk-test-image:v1
         file: ./Dockerfile
 
   deploy:
