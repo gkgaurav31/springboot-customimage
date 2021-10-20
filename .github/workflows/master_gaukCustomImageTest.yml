@@ -48,4 +48,4 @@ jobs:
         app-name: 'gaukCustomImageTest'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_6c55405c718946c4b8c42020620b3bca }}
-        images: 'gaukacr.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_83972e15a51a42aea9193dfaf5c9e7a2 }}/gauktestmage:${{ github.sha }}'
+        images: 'gaukacr.azurecr.io/gauk-test-image:v1'
