@@ -12,4 +12,5 @@ COPY sshd_config /etc/ssh/
 
 WORKDIR /home/site/wwwroot
 EXPOSE 8080 2222
+RUN chmod 777 /home/init.sh
 ENTRYPOINT /home/init.sh
